@@ -267,6 +267,8 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbGQ==</data>
+				<key>AAPL00,override-no-connect</key>
+                <data>AP///////wBNED4UAAAAACgZAQSlIxN4Ds/OqFQzuSUOTVYAAAABAQEBAQEBAQEBAQEBAQEBpqYAoPBwPoAwIDUAWsIQAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gA3UEhQVIJMUTE1NkQxAAAAAAACQQMoABIAAAsBCiAgAEo=</data>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
@@ -819,9 +821,24 @@
 	<key>NVRAM</key>
 	<dict>
 		<key>Add</key>
-		<dict/>
+		<dict>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<dict>
+				<key>boot-args</key>
+				<string>brcmfx-driver=2 -brcmfxbeta</string>
+				<key>booter-fileset-basesystem</key>
+				<data>AA==</data>
+				<key>booter-fileset-kernel</key>
+				<data>AA==</data>
+			</dict>
+		</dict>
 		<key>Delete</key>
-		<dict/>
+		<dict>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<array>
+				<string>boot-args</string>
+			</array>
+		</dict>
 		<key>LegacyEnable</key>
 		<false/>
 		<key>LegacyOverwrite</key>
