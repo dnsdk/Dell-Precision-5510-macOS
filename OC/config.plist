@@ -318,9 +318,9 @@
                     <key>#AAPL,slot-name</key>
                     <string>Internal@0,2,0</string>
                     <key>AAPL,ig-platform-id</key>
-                    <data>BQAcWQ==</data>
+                    <data>AAAbWQ==</data>
                     <key>device-id</key>
-                    <data>BQAcWQ==</data>
+                    <data>G1kAAA==</data>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
                     <key>disable-external-gpu</key>
@@ -352,7 +352,7 @@
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>model</key>
-                    <string>Intel HD Graphics 615</string>
+                    <string>Intel HD Graphics 630</string>
                 </dict>
             </dict>
             <key>Delete</key>
