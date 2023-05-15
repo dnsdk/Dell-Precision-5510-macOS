@@ -86,14 +86,6 @@
                     <key>Path</key>
                     <string>SSDT-ZPTS.aml</string>
                 </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-FixShutdown.aml</string>
-                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -315,18 +307,26 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>#AAPL,slot-name</key>
-                    <string>Internal@0,2,0</string>
+                    <key>AAPL,GfxTtile</key>
+                    <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
-                    <data>AAAbWQ==</data>
+                    <data>BQAcWQ==</data>
+                    <key>agdpmod</key>
+                    <string>vit9696</string>
+                    <key>complete-modeset</key>
+                    <data>AQAAAA==</data>
+                    <key>complete-modeset-framebuffers</key>
+                    <data>AAAAAQ==</data>
                     <key>device-id</key>
-                    <data>G1kAAA==</data>
+                    <data>HFkAAA==</data>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
                     <key>disable-external-gpu</key>
                     <data>AQAAAA==</data>
                     <key>dpcd-max-link-rate</key>
-                    <data>FAAAAA==</data>
+                    <data>AQAAAA==</data>
+                    <key>enable-dgcp-max-link-rate-fix</key>
+                    <data>AQAAAA==</data>
                     <key>enable-hdmi-dividers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-hdmi20</key>
@@ -335,24 +335,38 @@
                     <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
+                    <key>force-online-framebuffers</key>
+                    <data>AAAAAQ==</data>
+                    <key>framebuffer-con0-busid</key>
+                    <data>BQAAAA==</data>
                     <key>framebuffer-con0-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con0-pipe</key>
                     <data>EgAAAA==</data>
                     <key>framebuffer-con1-enable</key>
                     <data>AQAAAA==</data>
+                    <key>framebuffer-con1-flags</key>
+                    <data>xwMAAA==</data>
+                    <key>framebuffer-con1-index</key>
+                    <data>AQAAAA==</data>
                     <key>framebuffer-con1-pipe</key>
-                    <data>EgAAAA==</data>
+                    <data>CQAAAA==</data>
                     <key>framebuffer-con1-type</key>
                     <data>AAgAAA==</data>
+                    <key>framebuffer-fbmem</key>
+                    <data>AAAAAw==</data>
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
+                    <key>framebuffer-pipecount</key>
+                    <data>AwAAAA==</data>
+                    <key>framebuffer-portcount</key>
+                    <data>AwAAAA==</data>
                     <key>framebuffer-unifiedmem</key>
-                    <data>AAAAgA==</data>
+                    <data>AADw/w==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>model</key>
-                    <string>Intel HD Graphics 630</string>
+                    <string>Intel HD Graphics 615</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -368,7 +382,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4</string>
+                    <string>V1.6.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -440,7 +454,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.0</string>
+                    <string>V1.8.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -548,7 +562,7 @@
                     <key>BundlePath</key>
                     <string>AirportBrcmFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.6</string>
+                    <string>V2.1.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -584,7 +598,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4</string>
+                    <string>V2.6.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -602,7 +616,7 @@
                     <key>BundlePath</key>
                     <string>BrcmFirmwareData.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4</string>
+                    <string>V2.6.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -620,7 +634,7 @@
                     <key>BundlePath</key>
                     <string>BrcmPatchRAM3.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4</string>
+                    <string>V2.6.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -638,7 +652,7 @@
                     <key>BundlePath</key>
                     <string>BrightnessKeys.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.2</string>
+                    <string>V1.0.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -764,7 +778,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.4</string>
+                    <string>V2.3.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -782,7 +796,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.4</string>
+                    <string>V2.3.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -925,6 +939,8 @@
                 <true/>
                 <key>DisableIoMapper</key>
                 <true/>
+                <key>DisableIoMapperMapping</key>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -1306,10 +1322,14 @@
                 <false/>
                 <key>ForceResolution</key>
                 <false/>
+                <key>GopBurstMode</key>
+                <false/>
                 <key>GopPassThrough</key>
-                <string>Disabled</string>
+                <string>Apple</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
+                <key>InitialMode</key>
+                <string>Auto</string>
                 <key>ProvideConsoleGop</key>
                 <true/>
                 <key>ReconnectGraphicsOnConnect</key>
