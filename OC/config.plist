@@ -86,6 +86,14 @@
                     <key>Path</key>
                     <string>SSDT-ZPTS.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-FixShutdown.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -261,6 +269,8 @@
                 <true/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -307,26 +317,18 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>AAPL,GfxTtile</key>
-                    <data>AQAAAA==</data>
+                    <key>#AAPL,slot-name</key>
+                    <string>Internal@0,2,0</string>
                     <key>AAPL,ig-platform-id</key>
-                    <data>BQAcWQ==</data>
-                    <key>agdpmod</key>
-                    <string>vit9696</string>
-                    <key>complete-modeset</key>
-                    <data>AQAAAA==</data>
-                    <key>complete-modeset-framebuffers</key>
-                    <data>AAAAAQ==</data>
+                    <data>AAAWWQ==</data>
                     <key>device-id</key>
-                    <data>HFkAAA==</data>
+                    <data>FlkAAA==</data>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
                     <key>disable-external-gpu</key>
                     <data>AQAAAA==</data>
                     <key>dpcd-max-link-rate</key>
-                    <data>AQAAAA==</data>
-                    <key>enable-dgcp-max-link-rate-fix</key>
-                    <data>AQAAAA==</data>
+                    <data>FAAAAA==</data>
                     <key>enable-hdmi-dividers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-hdmi20</key>
@@ -335,38 +337,24 @@
                     <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
-                    <key>force-online-framebuffers</key>
-                    <data>AAAAAQ==</data>
-                    <key>framebuffer-con0-busid</key>
-                    <data>BQAAAA==</data>
                     <key>framebuffer-con0-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con0-pipe</key>
                     <data>EgAAAA==</data>
                     <key>framebuffer-con1-enable</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con1-flags</key>
-                    <data>xwMAAA==</data>
-                    <key>framebuffer-con1-index</key>
-                    <data>AQAAAA==</data>
                     <key>framebuffer-con1-pipe</key>
-                    <data>CQAAAA==</data>
+                    <data>EgAAAA==</data>
                     <key>framebuffer-con1-type</key>
                     <data>AAgAAA==</data>
-                    <key>framebuffer-fbmem</key>
-                    <data>AAAAAw==</data>
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-pipecount</key>
-                    <data>AwAAAA==</data>
-                    <key>framebuffer-portcount</key>
-                    <data>AwAAAA==</data>
                     <key>framebuffer-unifiedmem</key>
-                    <data>AADw/w==</data>
+                    <data>AAAAgA==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>model</key>
-                    <string>Intel HD Graphics 615</string>
+                    <string>Intel HD Graphics 630</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -382,7 +370,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.7</string>
+                    <string>V1.6.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -400,7 +388,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2</string>
+                    <string>V1.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -418,7 +406,7 @@
                     <key>BundlePath</key>
                     <string>CPUFriend.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.7</string>
+                    <string>V1.2.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -454,29 +442,11 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.5</string>
+                    <string>V1.9.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AppleALC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.4</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooInput</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -562,9 +532,9 @@
                     <key>BundlePath</key>
                     <string>AirportBrcmFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.7</string>
+                    <string>V2.1.8</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AirportBrcmFixup</string>
                     <key>MaxKernel</key>
@@ -582,7 +552,7 @@
                     <key>Comment</key>
                     <string>V1.0</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string></string>
                     <key>MaxKernel</key>
@@ -600,7 +570,7 @@
                     <key>Comment</key>
                     <string>V2.6.8</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
@@ -618,7 +588,7 @@
                     <key>Comment</key>
                     <string>V2.6.8</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrcmFirmwareData</string>
                     <key>MaxKernel</key>
@@ -636,7 +606,7 @@
                     <key>Comment</key>
                     <string>V2.6.8</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrcmPatchRAM3</string>
                     <key>MaxKernel</key>
@@ -688,7 +658,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2</string>
+                    <string>V1.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -706,7 +676,7 @@
                     <key>BundlePath</key>
                     <string>SMCDellSensors.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2</string>
+                    <string>V1.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -724,7 +694,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2</string>
+                    <string>V1.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -814,7 +784,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.6</string>
+                    <string>V1.6.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1154,23 +1124,23 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C077662698VB34YC7</string>
+                <string>C02028401QX0000FB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>AAAAAAAA</data>
+                <data>CT42XsbZ</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
                 <string>Upgradable</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,3</string>
+                <string>MacBookPro16,3</string>
                 <key>SystemSerialNumber</key>
-                <string>C02XIHPBYK67</string>
+                <string>C02D2GYNP3XY</string>
                 <key>SystemUUID</key>
-                <string>QQ8590Y5-D854-9268-1953-RV57P6724976</string>
+                <string>3D26ECC4-ACF6-4E3E-947E-D1DE6290E989</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1329,7 +1299,7 @@
                 <key>GopBurstMode</key>
                 <false/>
                 <key>GopPassThrough</key>
-                <string>Apple</string>
+                <string>Disabled</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
                 <key>InitialMode</key>
