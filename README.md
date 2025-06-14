@@ -1,5 +1,5 @@
-# Dell-Precision-5510-Sequoia
-# Dell-XPS-15-9550-Sequoia
+# Dell-Precision-5510-macOS26-Tahoe
+# Dell-XPS-15-9550-macOS26-Sequoia-Tahoe
 
 * i7-6820HQ HD530 64G DDR4 4K Screen DW1560
 
@@ -7,3 +7,6 @@
 
 - Wifi 
 - Bluetooth
+- TouchPad
+
+![Image](https://github.com/user-attachments/assets/b06dce9d-8342-4794-8fd9-f302efe42e2a)
