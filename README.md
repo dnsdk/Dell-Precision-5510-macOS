@@ -1,5 +1,5 @@
 # Dell-Precision-5510-macOS26-Tahoe
-# Dell-XPS-15-9550-macOS26-Sequoia-Tahoe
+# Dell-XPS-15-9550-macOS26-Tahoe
 
 * i7-6820HQ HD530 64G DDR4 4K Screen DW1560
 
