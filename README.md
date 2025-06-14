@@ -7,6 +7,5 @@
 
 - Wifi 
 - Bluetooth
-- TouchPad
 
 ![Image](https://github.com/user-attachments/assets/b06dce9d-8342-4794-8fd9-f302efe42e2a)
